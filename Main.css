@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+        background-image: url(Image.s/B-3.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-blend-mode: darken;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .niv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-width: 100%;
+        justify-content: stretch;
+        background-color: burlywood;
+        z-index: 1;
+    }
+    .Logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .L-G{
+        font-size: 19px;
+        color: black;
+    }
+    .ogo{
+        max-width: 70px;
+    }
+    .nav-body{
+        color: whitesmoke;
+        display: flex;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 400px;
+    }
+    ul li{
+        list-style: none;
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+
+    .nav-body, .link{
+        display: flex;
+        gap: 2rem;
+    }
+    .TOUCH{
+        text-decoration: none;
+        color: whitesmoke;
+        display: flex;
+    }
+    .TOUCH:hover{
+        transition: 0.2s;
+        text-decoration: underline;
+        color: black;
+    }
+    .MAIN-BODY{
+        display: flex;
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+    }
+    .INTO{
+        margin-top: 90px;
+
+        
+    }
+    @keyframes INFO{
+        from{
+            transform: translateX(-700px) rotate(180deg);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    /* Utility */
+     .animate-slow{
+        animation-duration: 3s;
+     }
+     h4{
+        font-size: 20px;
+     }
+    .INFO{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 60px;
+        color: white;
+        margin-left: 10px;
+        animation: INFO 3s forwards;
+    }
+    .O-D{
+        margin-left: 15px;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: burlywood;
+        border: none;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 5px;
+        color: white;
+
+        transition: all 0.3s;
+    }
+    .O-D:hover{
+        color: white;
+        transform: translateX(-10px);
+        background-color: black;
+        color: whitesmoke;
+    }
+    
+    .INTRO{
+        text-decoration: none;
+        color: white;
+    }
+
+    .IMAGE{
+        max-width: 570px;
+        animation:  IMAGE 2s ;
+
+    
+    }
+
+    @keyframes IMAGE{
+        from{
+            transform: translateY(-900px);
+        }
+        to{
+            transform: translateY(0)
+        }
+    }
+
+    @media (max-width:768){
+
+        .MAIN-BODY{
+            display: flex;
+            max-width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-height: 50vh;
+        }
+
+
+        .INFO{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            color: white;
+            margin-left: 10px;
+            animation: INFO 3s forwards;
+        }
+        .O-D{
+            margin-left: 15px;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: burlywood;
+            border: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 5px;
+            color: white;
+    
+            transition: all 0.3s;
+        }
+
+        .IMAGE{
+            max-width: 20px;
+            animation:  IMAGE 2s ;
+        }
+
+    }
